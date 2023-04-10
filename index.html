@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+  form {
+   width: 400px;
+   margin: 0 auto;
+   padding: 20px;
+   border: 1px solid rgb(82, 150, 250);
+   border-radius: 10px;
+   text-align: left;
+  }
+
+  h2 {
+   font-size: 28px;
+   margin-bottom: 20px;
+  }
+
+  input[type="text"], input[type="password"] {
+   width: 100%;
+   padding: 12px 20px;
+   margin: 8px 0;
+   display: inline-block;
+   border: 1px solid #ccc;
+   border-radius: 4px;
+   box-sizing: border-box;
+  }
+
+  input[type="checkbox"] {
+   margin-top: 20px;
+   margin-bottom: 10px;
+  }
+
+  .button {
+   background-color: #2951a7;
+   color: white;
+   padding: 14px 20px;
+   margin: 8px 0;
+   border: none;
+   border-radius: 4px;
+   cursor: pointer;
+  }
+
+  .button:hover {
+   background-color: #45a049;
+  }
+
+  .link {
+   font-size: 14px;
+   margin-top: 20px;
+  }
+
+  img {
+   display: block;
+   margin: 0 auto;
+   border-radius: 50%;
+   width: 100px;
+   height: 100px;
+   object-fit: cover;
+  }
+
+  .center {
+  display: flex;
+  justify-content: center;
+  align-items: center;  
+  color: #0c0c0c;
+  background-color: rgb(135, 171, 238);
+  margin: 0;
+  position: relative;
+  transform: translate(150%, 50%);
+  border-radius: 12px;
+  width: 100px;
+}
+
+ </style>
+</head>
+<body>
+  <img src="https://via.placeholder.com/100" alt="Profile Picture"> <br>
+ <form>
+  <label for="username">Email:</label>
+  <input type="text" placeholder="Enter Email" id="username" name="username" required>
+  <label for="password">Password:</label>
+  <input type="password" placeholder="Password" id="password" name="password" required>
+  <button class="center" id="button:hover">Login</button>
+  <input type="checkbox" id="remember-me" name="remember-me">
+  <label for="remember-me">Remember me</label>
+  <p class="link">Don't have an account? <a href="#">Sign up</a></p>
+ </form>
+</body>
+</html>
